@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+}
+
+/* setup */
+
+/* 
+Italic Light = h5
+Light = h4
+Regular = h3
+Medium = h2
+Bold = h1
+*/
+
+* h1{
+font-family: "halcom", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+* h2{
+font-family: "halcom", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+* h3{
+font-family: "halcom", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+* h4{
+font-family: "halcom", sans-serif;
+font-weight: 100;
+font-style: normal;
+}
+
+* h5{
+font-family: "halcom", sans-serif;
+font-weight: 200;
+font-style: italic;
+}
+
+* strong{
+    font-family: "halcom", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+:root{
+--leafblue: rgb(117,239,228);
+--accessyblack: rgb(32,32,35);
+--accessywhite: rgb(246,246,246);
+--orangeorange: rgb(255,179,129);
+--redpink: rgb(253,117,172);
+--purplethanos: rgb(151,123,255);
+--blueblue: rgb(130,192,255);
+--greengrass: rgb(166,224,180);
+}
+
+/* body */
+body{
+  margin: 0 auto;       
+  padding: 20px;       
+  max-width: 393px;
+}
+
+/* Top header */
+header h1, h5{
+    margin: 0;
+}
+.top h1{
+    font-size: 36px;
+}
+.top h5{
+    font-size: 20px;
+    opacity: 60%;
+}
+
+/* tracker/calendar */
+.tracker{
+    display: flex;
+    gap: 3px;
+    padding-top: 30px;
+}
+
+.tracker img{
+    max-width: 19px;
+    margin: 0;
+    opacity: 80%;
+}
+
+.tracker h1, h3{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    margin: 0;
+    line-height: 20px;
+    opacity: 90%;
+}
+
+.black{
+    background-color: var(--accessyblack);
+    border: 1.5px solid var(--accessyblack);
+    border-radius: 15px;
+    color: var(--accessywhite);
+    padding: 5px 13px 6px 13px;
+}
+
+.white{
+    border: 1.5px solid var(--accessyblack);
+    border-radius: 15px;
+    color: var(--accessyblack);
+    padding: 5px 13px 6px 13px;
+}
+
+
+/* Reminders + cards */
+/* Note: the layout keeps getting messed up when i was trying to add boldness onto part of text (like the pink card) */
+
+.reminder img{
+    max-width: 25px;
+    opacity: 80%;
+}
+
+.reminder h1{
+    font-size: 25px;
+}
+
+.reminder h4{
+    font-size: 11px;
+}
+
+.cardstop{
+    display: flex;
+    gap: 5px;
+    padding-bottom: 5px;
+    line-height: 0;
+}
+
+.cardsbottom{
+    display: flex;
+    gap: 5px;
+    line-height: 0;
+}
+
+.cardpink {
+    border-radius: 16px;
+    background-color: var(--redpink);
+}
+
+.cardorange{
+    border-radius: 16px;
+    background-color: var(--orangeorange);
+}
+
+.cardblue {
+    border-radius: 16px;
+    background-color: var(--blueblue);
+}
+
+.cardpurple {
+    border-radius: 16px;
+    background-color: var(--purplethanos);
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    margin: 10px;
+}
+
+.pinkcardtext{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+}
+
+.orangecardtext{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.bottomcardtext{
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+/* Suggestions */
+
+.suggestion h1{
+font-size: 25px;
+}
+
+.suggestion1{
+    border: 3px solid var(--greengrass);
+    border-radius: 15px;
+    padding: 10px 13px 10px 13px;
+        margin-bottom: 10px;
+}
+
+.suggestion2{
+    border: 3px solid var(--blueblue);
+    border-radius: 15px;
+    padding: 10px 13px 10px 13px;
+    margin-bottom: 10px;
+}
+
+.suggestion3{
+    border: 3px solid var(--blueblue);
+    border-radius: 15px;
+    padding: 10px 13px 10px 13px;
+}
+
+.suggestioncards strong{
+margin-right: 5px;
+margin-left: 5px;
+}
+
+
+/* Myth-Busters */
+
+.mythbuster h1{
+    font-size: 25px;
+}
+
+.mythcard{
+font-size: 16px;
+}
+
+.mythcard strong{
+    margin-left: 10px;
+}
+
+.mythcard{
+    border: 3px solid var(--leafblue);
+    border-radius: 15px;
+    padding: 10px 13px 10px 13px;
+    margin-bottom: 10px;
+}
+
+
+/* Last Asked */
+
+.mythcard4{
+    border: 3px solid var(--accessyblack);
+    border-radius: 15px;
+    padding: 10px 13px 10px 13px;
+    margin-bottom: 10px;
+}
+
+.mythcard5{
+    border: 3px solid var(--accessyblack);
+    border-radius: 15px;
+    padding: 10px 13px 10px 13px;
+}
+
+/* Navigation bar */
+
+
+#nav-bar a {
+  flex: 1; 
+  text-align: center;
+}
+
+.nav img {
+  max-width: 35px;  
+  margin: 0;        
+}
+
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--accessyblack);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    margin: 0 auto;       
+    padding: 20px;       
+    width: 100%;
+
+}
+
+.home{
+    border-bottom: 2px solid var(--leafblue);
+}
+
+
+

@@ -1,0 +1,15 @@
+{
+    "name": "Coachlas",
+    "short_name": "Co",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "FFFFFF",
+    "icons": [
+        {
+            "src": "./icons/coachlaslogo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+
+        }
+    ]
+}
