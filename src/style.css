@@ -515,14 +515,43 @@ justify-content: center;
 }
 
 
-.exercise-guide {
-    display: block;
+.popup-overlay{
+    display:none ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
+.closepopup {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    max-width: 30px;
+    cursor: pointer;
+}
+
+.open {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100vw;
+    max-width: 393px;
+    max-height: 620px;
+    overflow-y: auto;
+
+    z-index: 9999;
     padding: 20px;
     border-radius: 10px;
-    max-width: 600px;
-    margin-top: 10px;
     background-color: white;
 }
+
+
 
 .gif-container {
     position: relative;

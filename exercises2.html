@@ -35,7 +35,7 @@
 <section class="exercise-grid">
 
   <div class="grid">
-    <div class="exercise-box" onclick="toggleGuide()">
+    <div class="exercise-box">
       <img src="exercises/squat.png" alt="Squat">
       <p>Squat</p>
     </div>
@@ -70,52 +70,55 @@
   </div>
 </section>
 
-<div id="exerciseGuide" class="exercise-guide">
-
-    <div class="exercise-text">
-        <h1>Squat (High bar)</h2>
-        <h3>Quads</h3>
-        <h3>Glutes & Hamstrings</h3>
+<div class="popup-overlay">
+        <img class="closepopup" src="icons/close.svg" alt="closebtn">
+    <div id="squatexercise" class="open">
+    
+        <div class="exercise-text">
+            <h1>Squat (High bar)</h1>
+            <h3>Quads</h3>
+            <h3>Glutes & Hamstrings</h3>
+        </div>
+    
+    
+        <div class="gif-container">
+            <img src="exercises/squat.gif" alt="squat gif">
+            <button class="pause">⏸</button>
+        </div>
+    
+        <p>To do a high bar squat, place the bar on your upper traps, grip it slightly wider than shoulder-width, and stand with feet shoulder-width apart. Brace your core, keep your chest up, and lower yourself by bending your hips and knees, keeping your torso upright. Squat until your thighs are at least parallel, then push through your feet to stand back up, keeping your spine neutral and knees aligned.</p>
+    
+    
+      <div class="dropdown">
+    
+        <button class="dropdown-btn">Key Cues ▼</button>
+    
+        <div class="dropdown-content">
+            <h2>Body setup</h2>
+       <ul>
+          <li>Feet shoulder-width, toes slightly out (5-15°)</li>
+          <li>Chest up, spine neutral</li>
+          <li>Eyes forward or slightly up</li>
+          <li>Weight centered on midfoot/heels</li>
+        </ul>
+            <h2>Movement</h2>
+       <ul>
+          <li>Brace core with a deep breath (Brace?)</li>
+          <li>Hips back, then lower down</li>
+          <li>Knees track over toes (no collapse)</li>
+          <li>Aim for thighs at or below parallel</li>
+          <li>Drive through heels to stand tall</li>
+        </ul>
+        </div>
+    
+        <div>
+            <button class="dropdown-btn">Commom mistakes ▼</button>
+            <button class="dropdown-btn">Why it matters ▼</button>
+            <button class="dropdown-btn">Should I incorporate this? ▼</button>
+        </div>
     </div>
-
-
-    <div class="gif-container">
-        <img src="exercises/squat.gif" alt="squat gif">
-        <button class="pause">⏸</button>
-    </div>
-
-    <p>To do a high bar squat, place the bar on your upper traps, grip it slightly wider than shoulder-width, and stand with feet shoulder-width apart. Brace your core, keep your chest up, and lower yourself by bending your hips and knees, keeping your torso upright. Squat until your thighs are at least parallel, then push through your feet to stand back up, keeping your spine neutral and knees aligned.</p>
-
-
-  <div class="dropdown">
-
-    <button class="dropdown-btn">Key Cues ▼</button>
-
-    <div class="dropdown-content">
-        <h2>Body setup</h2>
-   <ul>
-      <li>Feet shoulder-width, toes slightly out (5-15°)</li>
-      <li>Chest up, spine neutral</li>
-      <li>Eyes forward or slightly up</li>
-      <li>Weight centered on midfoot/heels</li>
-    </ul>
-        <h2>Movement</h2>
-   <ul>
-      <li>Brace core with a deep breath (Brace?)</li>
-      <li>Hips back, then lower down</li>
-      <li>Knees track over toes (no collapse)</li>
-      <li>Aim for thighs at or below parallel</li>
-      <li>Drive through heels to stand tall</li>
-    </ul>
-    </div>
-
-    <div>
-        <button class="dropdown-btn">Commom mistakes ▼</button>
-        <button class="dropdown-btn">Why it matters ▼</button>
-        <button class="dropdown-btn">Should I incorporate this? ▼</button>
     </div>
 </div>
-
 
 </body>
 </html>
