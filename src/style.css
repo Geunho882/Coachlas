@@ -372,6 +372,12 @@ aspect-ratio: 1 / 1;
   margin: 0 0 5px;
   font-size: 24px;
   font-weight: 700;
+  
+}
+
+.card a{
+    text-decoration: none;
+    color: var(--accessyblack);
 }
 
 .card ul {
@@ -391,6 +397,6 @@ aspect-ratio: 1 / 1;
 .green  { background-color: var(--greengrass) }
 .orange { background-color: var(--orangeorange) }
 
-/* Chatpage */
+/* exercises list */
 
 
