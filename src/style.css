@@ -324,54 +324,55 @@ font-size: 16px;
     font-size: 25px;
 }
 
-.searchicon img{
+.searchicon img {
     max-width: 25px;
     opacity: 80%;
-    margin: 0;
+    position: absolute;
+    left: 15px;              
 }
 
-.searchicon h4{
+.searchicon h4 {
     font-size: 20px;
     opacity: 30%;
     margin: 0;
 }
 
 .searchicon {
-    display: flex;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     margin-top: 40px;
     margin-bottom: 40px;
-    gap: 120px;
     padding: 10px;
     border: 2px solid var(--leafblue);
     border-radius: 20px;
-
-
 }
 
 /* category cards */
 
 .explore-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin: 0 auto;
-  max-width: 393px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 393px;
 
 }
 
 .card {
-  padding: 10px 10px;
-  border-radius: 16px;
-aspect-ratio: 1 / 1;
-  color: var(--accessyblack);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    border-radius: 16px;
+    aspect-ratio: 1 / 1;
+    color: var(--accessyblack);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card h2 {
     opacity: 80%;
-  margin: 0 0 5px;
-  font-size: 24px;
-  font-weight: 700;
+    margin: 0 0 5px;
+    font-size: 24px;
+    font-weight: 700;
   
 }
 
@@ -381,15 +382,15 @@ aspect-ratio: 1 / 1;
 }
 
 .card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .card li {
     opacity: 60%;
-  margin-bottom: 0;
-  font-size: 14px;
+    margin-bottom: 0;
+    font-size: 14px;
 }
 
 .purple { background-color: var(--purplethanos) }
@@ -399,4 +400,172 @@ aspect-ratio: 1 / 1;
 
 /* exercises list */
 
+/* header */
+.header3 img{
+    max-width: 35px;
+    opacity: 80%;
+    margin: 0;
+}
+
+.header3 h2{
+    font-size: 35px;
+    margin: 0;
+}
+
+.header3 a{
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.header3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+/* second search bar */
+.searchicon2 img {
+    max-width: 25px;
+    opacity: 80%;
+    position: absolute;
+    left: 15px;              
+}
+
+.searchicon2 h4 {
+    font-size: 20px;
+    opacity: 30%;
+    margin: 0;
+}
+
+.searchicon2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid var(--leafblue);
+    border-radius: 20px;
+}
+
+/* two button types */
+.types{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.types button{
+    background-color: var(--purplethanos); 
+    color: var(--accessyblack);  
+    border: none;    
+    padding: 5px 0; 
+    flex: 1;           
+    text-align: center;
+    border-radius: 8px;    
+    font-size: 16px;
+    cursor: pointer; 
+}
+
+.recent h2{
+    font-size: 16px;
+    opacity: 50%;
+}
+
+/* exercise cards */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.exercise-box {
+    background-color: var(--accessywhite);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-box img {
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.exercise-box p {
+    margin: 10px 0;
+}
+
+/* squat popup */
+
+.exercise-text h1{
+display: flex;
+justify-content: center;
+}
+
+
+.exercise-guide {
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.gif-container {
+    position: relative;
+    margin: 15px 0;
+}
+
+.gif-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.pause-btn {
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 4px 8px;
+}
+
+.dropdown-btn {
+    display: block;
+    width: 100%;
+    background: var(--purplethanos);
+    text-decoration: none;
+    color: var(--accessyblack);
+    border: none;
+    padding: 10px;
+    text-align: left;
+    border-radius: 15px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.dropdown-content {
+    padding: 10px;
+    border: 2px solid var(--purplethanos);
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.dropdown-btn {
+    font-family: "halcom", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
 
