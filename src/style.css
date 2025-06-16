@@ -265,7 +265,7 @@ font-size: 16px;
   text-align: center;
 }
 
-.nav img {
+#nav-bar img {
   max-width: 35px;  
   margin: 0;        
 }
@@ -282,7 +282,7 @@ font-size: 16px;
     z-index: 100;
     margin: 0 auto;       
     padding: 20px;       
-    width: 100%;
+    width: 330px;
 
 }
 
@@ -290,5 +290,15 @@ font-size: 16px;
     border-bottom: 2px solid var(--leafblue);
 }
 
+.search{
+        border-bottom: 2px solid var(--leafblue);
+}
+
+.chat{
+        border-bottom: 2px solid var(--leafblue);
+}
+
+
+/* Explore/Learn Page */
 
 
