@@ -6,7 +6,7 @@ const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 export const supabase = createClient(supabaseUrl, supabaseKey)
 
 
-// chat.js (sorry had to use Ai, quite hard to code the chat feature)
+// (sorry had to use Ai for help, quite hard to code the chat feature)
 
 document.addEventListener('DOMContentLoaded', () => {
   const sendBtn = document.querySelector('.chatbtn2');
