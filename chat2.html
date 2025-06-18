@@ -8,8 +8,9 @@
     <meta name="theme-color" content="#75EFE4">
 
     <link rel="stylesheet" href="src/style.css">
-    <script src="src/script.js" defer ></script>
+
     <link rel="stylesheet" href="https://use.typekit.net/ubc3nle.css">
+      <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js" defer></script>
 </head>
 <body>
 
@@ -36,7 +37,7 @@
     
     <section class="chat-box">
         <div class="chatting">
-            <input type="text" placeholder="Ask me anything fitness related!">
+            <input type="text" id="chat-input" placeholder="Ask me anything fitness related!">
     
             <div class="chat-controls">
                 <div class="chatbtn">
@@ -44,7 +45,7 @@
                     <img src="icons/mic.svg" alt="microphone">
                 </div>
                 <div class="chatbtn2">
-                    <img src="icons/send.svg" alt="enter">
+                    <img src="icons/send.svg" alt="enter" id="send-btn">
                 </div>
             </div>
         </div>
@@ -57,7 +58,7 @@
 
 
 
-    <nav id="nav-bar">
+    <nav class="nav-bar">
 
         <a href="index.html">
             <img class="" src="icons/home.svg" alt="">
@@ -73,5 +74,7 @@
         </a>
 
     </nav>
+
+<script type="module" src="src/chat.js"></script>
 </body>
 </html>
